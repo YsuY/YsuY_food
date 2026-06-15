@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list1</title>
+     <style>
+        @font-face {
+            font-family: 'SchoolSafetyRoundedSmile';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'SchoolSafetyRoundedSmile';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'SchoolSafetyRoundedSmile';
+        }
+
+        .main-title {
+            background-color: ivory;
+            text-align: center;
+            height: 100px;
+            letter-spacing: 3px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffd0a4;
+            margin: 100px 0px 150px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 20%;
+
+        }
+
+        .food,
+        .dessert {
+            background-color: rgb(255, 251, 190);
+            text-align: center;
+            letter-spacing: 1px;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 30px;
+            border: 1px solid #ffd0a4;
+        }
+
+        .food, .dessert{
+            transition: 0.5s;
+        }
+
+        .food:hover, .dessert:hover{
+            transform: scale(1.15);
+        }
+
+
+        @media(max-width: 1024px){
+
+            .main-title{
+                font-size: 30px;
+                letter-spacing: 2px;
+                height: 50px;
+                margin: 70px 0px 100px;
+
+            }
+            .container{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 120px;
+            }
+            .food, .dessert{
+                font-size: 25px;
+                height: 150px;
+                width: 150px;
+            }
+        }
+       
+        @media(max-width: 767px){
+            .main-title{
+                font-size: 20px;
+                letter-spacing: 2px;
+                height: 50px;
+                margin: 60px 0px 90px;
+
+            }
+            .container{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+            }
+            .food, .dessert{
+                font-size: 25px;
+                height: 120px;
+                width: 120px;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+     <header>
+        <h1 class="main-title">맛집 리스트</h1>
+    </header>
+
+    <main>
+        <nav class="container">
+            <a href="meal_list.html" class="food">식사</a>
+            <a href="dessert_list.html" class="dessert">디저트</a>
+        </nav>
+    </main>
+</body>
+</html>

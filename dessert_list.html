@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디저트 리스트</title>
+    <style>
+        @font-face {
+            font-family: 'SchoolSafetyRoundedSmile';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'SchoolSafetyRoundedSmile';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'SchoolSafetyRoundedSmile';
+        }
+
+        h1 {
+            text-align: center;
+            background-color: ivory;
+            height: 100px;
+            letter-spacing: 3px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffd0a4;
+            margin: 100px 0px 150px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: ivory;
+            height: 40px;
+            width: 180px;
+            margin: auto;
+            letter-spacing: 1px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffd0a4;
+            margin-top: 150px;
+            margin-bottom: 150px;
+
+        }
+
+        .dessertlist {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+        }
+
+        .dcard img {
+            width: 55%;
+            height: 100%;
+        }
+
+        .dcard {
+            display: flex;
+            width: 650px;
+            background-color: rgb(255, 251, 190);
+            border: 5px solid #ffd0a4;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 3px 3px 8px;
+            height: 480px;
+        }
+
+        .dcard1 {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .dcard1 h2 {
+            text-align: center;
+            margin: 50px 0px 90px;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        .dcard1 ul {
+            padding-left: 40px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            font-size: 16px;
+        }
+
+        footer p {
+            text-align: right;
+            margin-top: 100px;
+        }
+
+        .mcard {
+            animation: cardappear 2s;
+        }
+
+        @keyframes cardappear {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .dcard {
+            transition: 0.5s;
+        }
+
+        .dcard:hover {
+            transform: scale(1.15);
+        }
+
+        .dcard h2 a {
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .dcard h2 a:hover {
+            color: rgb(233, 157, 43);
+        }
+
+        @media(max-width: 1024px) {
+            h1 {
+                font-size: 30px;
+                letter-spacing: 2px;
+                height: 50px;
+                margin: 70px 0px 100px;
+            }
+
+            .dessertlist {
+                gap: 80px;
+            }
+
+            .dcard img {
+                width: 55%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .dcard {
+                width: 50%;
+                margin-bottom: 40px;
+                border: 4px solid #ffd0a4;
+            }
+
+            .dcard1 h2 {
+                font-size: 20px;
+                margin: 40px 0px 70px;
+            }
+
+            .dcard1 ul {
+                padding-left: 20px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                font-size: 15px;
+            }
+        }
+
+        @media(max-width: 767px) {
+            h1 {
+                font-size: 20px;
+                letter-spacing: 2px;
+                height: 50px;
+                margin: 60px 0px 90px;
+            }
+
+            .dessertlist {
+                gap: 80px;
+            }
+
+            .dcard img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+            }
+
+            .dcard {
+                flex-direction: column;
+                width: 70%;
+                margin-bottom: 40px;
+                border: 3px solid #ffd0a4;
+            }
+
+            .dcard1 h2 {
+                font-size: 20px;
+                margin: 15px 0px 33px;
+            }
+
+            .dcard1 ul {
+                padding-left: 10px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                font-size: 14px;
+            }
+
+            nav {
+                height: 30px;
+                width: 140px;
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+
+            footer p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>디저트 리스트</h1>
+    </header>
+
+    <section class="dessertlist">
+        <article class="dcard">
+            <img src="img/레뽀드라라.jpg" alt="레뽀드라라">
+            <div class="dcard1">
+                <h2>
+                    <a href="https://map.naver.com/p/search/%EC%97%AD%EC%82%BC%EC%97%AD%20%EB%A0%88%EB%BD%80%EB%93%9C%EB%9D%BC%EB%9D%BC/place/1317157725?placePath=/photo?abtExp=N-PLCPWL-RANK-26:3%5EN-PLC-AD-UI-26:3&bk_query=%EC%97%AD%EC%82%BC%EC%97%AD%20%EB%A0%88%EB%BD%80%EB%93%9C%EB%9D%BC%EB%9D%BC&entry=pll&from=nx&fromNxList=true&from=map&fromPanelNum=2&timestamp=202606132226&locale=ko&svcName=map_pcv5&searchText=%EC%97%AD%EC%82%BC%EC%97%AD%20%EB%A0%88%EB%BD%80%EB%93%9C%EB%9D%BC%EB%9D%BC&bk_query=%EC%97%AD%EC%82%BC%EC%97%AD%20%EB%A0%88%EB%BD%80%EB%93%9C%EB%9D%BC%EB%9D%BC&entry=pll&from=nx&fromNxList=true&fromPanelNum=2&timestamp=202606132226&locale=ko&svcName=map_pcv5&searchText=%EC%97%AD%EC%82%BC%EC%97%AD%20%EB%A0%88%EB%BD%80%EB%93%9C%EB%9D%BC%EB%9D%BC&searchType=place&c=15.00,0,0,0,dh"
+                        target="_blank">레뽀드라라</a>
+                </h2>
+                <ul>
+                    <li>에그 필링 스콘</li>
+                    <li>스콘크럼블 파운드</li>
+                    <li>소금빵</li>
+                    <li>클로티드 라즈베리 스콘</li>
+                    <li>바닐라빈 까눌레</li>
+                    <li>고메버터 휘낭시에</li>
+                    <li>까눌레 러스크</li>
+                </ul>
+            </div>
+        </article>
+
+
+        <article class="dcard">
+            <img src="img/정월.jpg" alt="정월">
+            <div class="dcard1">
+                <h2>
+                    <a href="https://map.naver.com/p/entry/place/1478381424?lng=127.0286442&lat=37.5036729&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202606132251&locale=ko&svcName=map_pcv5&searchType=place&c=15.00,0,0,0,dh"
+                        target="_blank">정월</a>
+                </h2>
+                <ul>
+                    <li>아인슈패너</li>
+                    <li>말차 아인슈패너</li>
+                    <li>흑임자둥지라떼</li>
+                    <li>플랫화이트</li>
+                    <li>기라델리 초코라떼</li>
+                    <li>엘더플라워 에이드</li>
+                    <li>오미자 프룻 티 에이드</li>
+                </ul>
+            </div>
+        </article>
+
+
+        <article class="dcard">
+            <img src="img/팡뮤제 베이커리.jpg" alt="팡뮤제 베이커리">
+            <div class="dcard1">
+                <h2>
+                    <a href="https://map.naver.com/p/entry/place/1992203822?lng=127.0321763&lat=37.496307&placePath=/home?fromPanelNum=1&additionalHeight=76&timestamp=202606132303&locale=ko&svcName=map_pcv5&additionalHeight=76&timestamp=202606132303&locale=ko&svcName=map_pcv5&fromPanelNum=1&searchType=place&c=14.00,0,0,0,dh"
+                        target="_blank">팡뮤제 베이커리</a>
+                </h2>
+                <ul>
+                    <li>아메리카노</li>
+                    <li>시나몬 생크림 단팥빵</li>
+                    <li>소금빵</li>
+                    <li>플레인 크로와상</li>
+                    <li>마늘바게트</li>
+                    <li>공주밤식빵</li>
+                    <li>바스크 치즈 케이크</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <nav>
+            <a href="index.html">메인 메뉴로 돌아가기</a>
+        </nav>
+        <p>역삼-강남 디저트 가게 소개</p>
+    </footer>
+</body>
+
+</html>
